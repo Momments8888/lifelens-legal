@@ -1,18 +1,19 @@
-Here's a complete, copy-paste-ready privacy policy tailored to what LifeLens AI actually does. Save it as privacy.md in your GitHub repo.
+Here's the complete updated privacy policy — copy everything below into privacy.md in your momments8888/lifelens-legal repo:
 
 # LifeLens AI — Privacy Policy
 
-**Effective date:** February 15, 2026  
-**Last updated:** February 15, 2026
+**Effective date:** February 15, 2026
+
+**Last updated:** July 9, 2026
 
 ## 1. Who we are
 
 LifeLens AI ("LifeLens," "we," "us," or "our") is a mobile application that
 builds a searchable memory of your life from photos, voice notes, receipts,
-text, and location. This Privacy Policy explains what we collect, how we use
-it, and the rights you have over your data.
+prescriptions, text, and location. This Privacy Policy explains what we
+collect, how we use it, and the rights you have over your data.
 
-If you have any questions, contact us at **support@lifelens.ai**.
+If you have any questions, contact us at **support@lifelens.app**.
 
 ## 2. Information we collect
 
@@ -24,6 +25,13 @@ If you have any questions, contact us at **support@lifelens.ai**.
 - **Memories:** anything you save into LifeLens, including text notes, voice
   recordings, photos, receipts, and forwarded emails. Memories may include
   metadata (location, timestamp) you choose to attach.
+- **Prescription and medication information (only if you use the
+  prescription feature):** when you scan a prescription or medication label,
+  we store the photo and the extracted details — medication name, dosage,
+  frequency, prescriber, instructions, your dose schedule times, dose-taken
+  logs, and any personal notes you add. This is sensitive health
+  information; it is stored against your account only and is never shared
+  with advertisers or sold.
 - **Payment information:** if you subscribe to Premium, our payment processor
   (Stripe) collects your payment details. **We never see or store your card
   number.** Stripe returns only a customer ID and a subscription status to us.
@@ -37,12 +45,13 @@ If you have any questions, contact us at **support@lifelens.ai**.
   notifications. Background location is used only if you enable it in
   Settings → Location.
 - **Health data (only if you connect Health Connect or Apple Health):**
-  steps, sleep sessions, distance walked, and active calories. This data is
-  read via the Android Health Connect / iOS HealthKit APIs and pulled only
+  steps, sleep sessions, distance walked, active calories, and heart-rate
+  measurements (daily average, minimum, maximum, and resting BPM). This data
+  is read via the Android Health Connect / iOS HealthKit APIs and pulled only
   when you have granted explicit permission.
 - **Usage information:** in-app actions (memories created, questions asked)
-  used solely to power the app's core features and to help you find your own
-  memories through search.
+  used solely to power the app's core features, to show you your own usage
+  statistics, and to help you find your own memories through search.
 
 ### 2.3 Information we do NOT collect
 
@@ -58,25 +67,38 @@ We use the information we collect to:
 
 - Provide the core functionality (save your memories, answer questions about
   them, generate summaries).
-- Deliver push notifications you have opted into (reminders, smart-recall
-  prompts, weekly digest).
-- Sync health metrics you have explicitly connected.
-- Attach weather at the time and place of a memory (via Open-Meteo, a
-  free public API with no personal identifiers).
+- Read prescription labels you scan and build medication schedules, dose
+  reminders, and refill running-low alerts you ask for.
+- Deliver notifications you have opted into (reminders, medication doses,
+  smart-recall prompts, weekly digest).
+- Sync health metrics you have explicitly connected (sleep, steps, heart
+  rate).
+- Attach weather at the time and place of a memory (via Open-Meteo and
+  similar public weather APIs, with no personal identifiers).
 - Look up business details you save (via Google Places).
 - Process subscription payments (via Stripe).
-- Send transactional emails such as password resets (via Resend).
+- Send transactional emails such as password resets and, if you opt in,
+  weekly digest emails summarizing your recent memories (via Resend).
 - Detect and prevent fraud, abuse, and security incidents.
 - Comply with legal obligations.
 
 ## 4. AI processing
 
-To power features such as summarization, natural-language search, and
-"Where did I park?" style Q&A, LifeLens sends the text of relevant memories
-(never your raw photos, and never your entire history at once) to one or
-more Large Language Model providers we contract with (currently OpenAI and
-Anthropic). These providers process content on our behalf under agreements
-that prohibit them from training their models on your data.
+To power features such as summarization, natural-language search, photo
+understanding, prescription reading, and "Where did I park?" style Q&A,
+LifeLens sends relevant content to AI providers we contract with (currently
+OpenAI). Depending on the feature, this content can include:
+
+- the **text** of relevant memories (never your entire history at once);
+- **photos you choose to capture or upload**, which are analyzed by a vision
+  model to produce a searchable text description (including prescription
+  label photos, which are read to extract medication details);
+- **voice recordings**, which are transmitted for speech-to-text
+  transcription, and text that is converted to audio if you enable the
+  premium voice feature.
+
+These providers process content on our behalf under agreements that prohibit
+them from training their models on your data.
 
 You can turn off AI features from Profile → Settings; the app will continue
 to work as a plain memory archive.
@@ -90,8 +112,10 @@ to work as a plain memory archive.
   backend uses TLS 1.2 or higher.
 - **Access controls:** only the account owner (and family members you
   explicitly add) can decrypt and read your memories.
-- **Third-party storage:** photos and files may be stored via Cloudinary,
-  which provides its own encryption at rest and in transit.
+- **Third-party media storage:** photos and voice recordings are stored in
+  Google Firebase Storage (Google Cloud) under private, per-user paths.
+  Files are accessible only through unguessable per-file URLs issued to your
+  account, and Google provides its own encryption at rest and in transit.
 
 No system is perfectly secure. We cannot guarantee absolute security, but
 we work continuously to reduce risk.
@@ -101,13 +125,14 @@ we work continuously to reduce risk.
 We share information only in these limited circumstances:
 
 - **Service providers** that operate the app under contract:
-  - **OpenAI / Anthropic** — AI processing.
-  - **Google (Places, Maps, Health Connect)** — place lookups, maps, and
-    device-level health data access.
-  - **Cloudinary** — media storage.
+  - **OpenAI** — AI processing (text, vision, speech-to-text,
+    text-to-speech).
+  - **Google (Places, Maps, Firebase Storage, Health Connect)** — place
+    lookups, maps, media storage, and device-level health data access.
   - **Stripe** — payment processing.
-  - **Resend** — transactional email.
-  - **Open-Meteo** — weather (no personal identifiers sent).
+  - **Resend** — transactional and weekly-digest email.
+  - **Open-Meteo and similar weather APIs** — weather (no personal
+    identifiers sent).
 - **Family members you add** — memories tagged as "family" become readable
   by everyone in your family circle. You can leave a family circle at any
   time in Profile → Family.
@@ -144,7 +169,8 @@ authority.
 
 - **Active accounts:** we keep your data as long as your account is active.
 - **Deleted memories:** stay in Trash for **30 days** so you can restore
-  them, then are permanently deleted.
+  them, then are permanently deleted (including the associated photo and
+  voice files in Firebase Storage).
 - **Deleted accounts:** all associated data is permanently deleted within
   30 days of account deletion, except for records we must retain for tax
   or legal reasons (usually anonymized).
@@ -175,5 +201,5 @@ date at the top always reflects the current version.
 
 Questions, concerns, or data-rights requests:
 
-- **Email:** support@lifelens.ai
+- **Email:** support@lifelens.app
 - **In-app:** Profile → Help & feedback
