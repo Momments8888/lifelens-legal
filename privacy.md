@@ -47,8 +47,7 @@ If you have any questions, contact us at **support@lifelens.app**.
   it powers automatic "capture this moment?" and "you just left…" nudges,
   and you can turn it off at any time.
 - **Health data (only if you connect Health Connect or Apple Health):**
-  steps, distance walked, active calories, and heart-rate measurements
-  (daily average, minimum, maximum, and resting BPM). This data is read via
+  steps, distance walked, and active calories. This data is read via
   the Android Health Connect / iOS HealthKit APIs and pulled only when you
   have granted explicit permission. Health data is never shared with third
   parties and never used for advertising.
@@ -76,7 +75,7 @@ We use the information we collect to:
   reminders, and refill running-low alerts you ask for.
 - Deliver notifications you have opted into (reminders, medication doses,
   smart-recall prompts, weekly digest).
-- Sync health metrics you have explicitly connected (steps, heart rate).
+- Sync health metrics you have explicitly connected (steps).
 - Attach weather at the time and place of a memory (via Open-Meteo and
   similar public weather APIs, with no personal identifiers).
 - Look up business details you save (via Google Places).
