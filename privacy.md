@@ -1,10 +1,8 @@
-Here's the complete updated privacy policy — copy everything below into privacy.md in your momments8888/lifelens-legal repo:
-
 # LifeLens AI — Privacy Policy
 
 **Effective date:** February 15, 2026
 
-**Last updated:** July 9, 2026
+**Last updated:** July 17, 2026
 
 ## 1. Who we are
 
@@ -42,13 +40,18 @@ If you have any questions, contact us at **support@lifelens.app**.
   and time zone.
 - **Location data (only if you grant permission):** foreground location for
   features like "Where did I park?", business-dwell prompts, and smart-recall
-  notifications. Background location is used only if you enable it in
-  Settings → Location.
+  notifications. **Precise (GPS-level) location** is used for these features;
+  coordinates are also used to attach a weather stamp to the moment.
+  **Background location** is used only if you enable Smart Recall in
+  Settings → Location AND grant "Allow all the time" in the system prompt —
+  it powers automatic "capture this moment?" and "you just left…" nudges,
+  and you can turn it off at any time.
 - **Health data (only if you connect Health Connect or Apple Health):**
-  steps, sleep sessions, distance walked, active calories, and heart-rate
-  measurements (daily average, minimum, maximum, and resting BPM). This data
-  is read via the Android Health Connect / iOS HealthKit APIs and pulled only
-  when you have granted explicit permission.
+  steps, distance walked, active calories, and heart-rate measurements
+  (daily average, minimum, maximum, and resting BPM). This data is read via
+  the Android Health Connect / iOS HealthKit APIs and pulled only when you
+  have granted explicit permission. Health data is never shared with third
+  parties and never used for advertising.
 - **Usage information:** in-app actions (memories created, questions asked)
   used solely to power the app's core features, to show you your own usage
   statistics, and to help you find your own memories through search.
@@ -56,8 +59,10 @@ If you have any questions, contact us at **support@lifelens.app**.
 ### 2.3 Information we do NOT collect
 
 - We do **not** collect data from other apps on your device.
-- We do **not** read your SMS, contacts, or calendar unless you explicitly
-  attach or forward that content into LifeLens.
+- We do **not** read your SMS, call logs, contacts, or calendar. The only
+  contact interaction is **creating** a contact card on your device when you
+  explicitly tap "Save as contact" — we never read or upload your contact
+  list.
 - We do **not** track your web browsing.
 - We do **not** sell your data to advertisers.
 
@@ -71,18 +76,19 @@ We use the information we collect to:
   reminders, and refill running-low alerts you ask for.
 - Deliver notifications you have opted into (reminders, medication doses,
   smart-recall prompts, weekly digest).
-- Sync health metrics you have explicitly connected (sleep, steps, heart
-  rate).
+- Sync health metrics you have explicitly connected (steps, heart rate).
 - Attach weather at the time and place of a memory (via Open-Meteo and
   similar public weather APIs, with no personal identifiers).
 - Look up business details you save (via Google Places).
+- Save a memory's photo back to your device's photo library, only when you
+  tap "Save photo".
 - Process subscription payments (via Stripe).
 - Send transactional emails such as password resets and, if you opt in,
   weekly digest emails summarizing your recent memories (via Resend).
 - Detect and prevent fraud, abuse, and security incidents.
 - Comply with legal obligations.
 
-## 4. AI processing
+## 4. AI processing (third-party AI — limited use)
 
 To power features such as summarization, natural-language search, photo
 understanding, prescription reading, and "Where did I park?" style Q&A,
@@ -97,7 +103,10 @@ OpenAI). Depending on the feature, this content can include:
   transcription, and text that is converted to audio if you enable the
   premium voice feature.
 
-These providers process content on our behalf under agreements that prohibit
+**Limited use:** your content is sent to these providers **only** to provide
+the specific feature you invoked, is retained by them only as long as needed
+to process the request, is **never** used for advertising or profiling, and
+these providers process content on our behalf under agreements that prohibit
 them from training their models on your data.
 
 You can turn off AI features from Profile → Settings; the app will continue
@@ -126,7 +135,7 @@ We share information only in these limited circumstances:
 
 - **Service providers** that operate the app under contract:
   - **OpenAI** — AI processing (text, vision, speech-to-text,
-    text-to-speech).
+    text-to-speech), under the limited-use terms described in Section 4.
   - **Google (Places, Maps, Firebase Storage, Health Connect)** — place
     lookups, maps, media storage, and device-level health data access.
   - **Stripe** — payment processing.
@@ -142,7 +151,8 @@ We share information only in these limited circumstances:
   you before your data is transferred, and you may delete your account
   first if you prefer.
 
-We do **not** sell your personal information.
+We do **not** sell your personal information. Location and health data are
+**never** shared with third parties for their own purposes.
 
 ## 7. Your rights
 
