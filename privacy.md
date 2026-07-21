@@ -8,7 +8,7 @@
 
 LifeLensAI ("LifeLensAI," "we," "us," or "our") is a mobile application that
 builds a searchable memory of your life from photos, voice notes, receipts,
-prescriptions, text, and location. This Privacy Policy explains what we
+text, and location. This Privacy Policy explains what we
 collect, how we use it, and the rights you have over your data.
 
 If you have any questions, contact us at **support@lifelens.app**.
@@ -23,13 +23,6 @@ If you have any questions, contact us at **support@lifelens.app**.
 - **Memories:** anything you save into LifeLensAI, including text notes, voice
   recordings, photos, receipts, and forwarded emails. Memories may include
   metadata (location, timestamp) you choose to attach.
-- **Prescription and medication information (only if you use the
-  prescription feature):** when you scan a prescription or medication label,
-  we store the photo and the extracted details - medication name, dosage,
-  frequency, prescriber, instructions, your dose schedule times, dose-taken
-  logs, and any personal notes you add. This is sensitive health
-  information; it is stored against your account only and is never shared
-  with advertisers or sold.
 - **Payment information:** if you subscribe to Premium, our payment processor
   (Stripe) collects your payment details. **We never see or store your card
   number.** Stripe returns only a customer ID and a subscription status to us.
@@ -51,11 +44,6 @@ If you have any questions, contact us at **support@lifelens.app**.
   Settings -> Location AND grant "Allow all the time" in the system prompt - 
   it powers automatic "capture this moment?" and "you just left..." nudges,
   and you can turn it off at any time.
-- **Health data (only if you connect Health Connect or Apple Health):**
-  steps, distance walked, and active calories. This data is read via
-  the Android Health Connect / iOS HealthKit APIs and pulled only when you
-  have granted explicit permission. Health data is never shared with third
-  parties and never used for advertising.
 - **Usage information:** in-app actions (memories created, questions asked)
   used solely to power the app's core features, to show you your own usage
   statistics, and to help you find your own memories through search.
@@ -76,11 +64,8 @@ We use the information we collect to:
 
 - Provide the core functionality (save your memories, answer questions about
   them, generate summaries).
-- Read prescription labels you scan and build medication schedules, dose
-  reminders, and refill running-low alerts you ask for.
-- Deliver notifications you have opted into (reminders, medication doses,
-  smart-recall prompts, weekly digest).
-- Sync health metrics you have explicitly connected (steps).
+- Deliver notifications you have opted into (reminders, smart-recall
+  prompts, weekly digest).
 - Attach weather at the time and place of a memory (via Open-Meteo and
   similar public weather APIs, with no personal identifiers).
 - Look up business details you save (via Google Places).
@@ -95,14 +80,13 @@ We use the information we collect to:
 ## 4. AI processing (third-party AI - limited use)
 
 To power features such as summarization, natural-language search, photo
-understanding, prescription reading, and "Where did I park?" style Q&A,
+understanding, and "Where did I park?" style Q&A,
 LifeLensAI sends relevant content to AI providers we contract with (currently
 OpenAI). Depending on the feature, this content can include:
 
 - the **text** of relevant memories (never your entire history at once);
 - **photos you choose to capture or upload**, which are analyzed by a vision
-  model to produce a searchable text description (including prescription
-  label photos, which are read to extract medication details);
+  model to produce a searchable text description;
 - **voice recordings**, which are transmitted for speech-to-text
   transcription, and text that is converted to audio if you enable the
   premium voice feature.
@@ -159,8 +143,8 @@ We share information only in these limited circumstances:
 - **Service providers** that operate the app under contract:
   - **OpenAI** - AI processing (text, vision, speech-to-text,
  text-to-speech), under the limited-use terms described in Section 4.
-  - **Google (Places, Maps, Firebase Storage, Health Connect)** - place
- lookups, maps, media storage, and device-level health data access.
+  - **Google (Places, Maps, Firebase Storage)** - place
+ lookups, maps, and media storage.
   - **Stripe** - payment processing.
   - **Resend** - transactional and weekly-digest email.
   - **Open-Meteo and similar weather APIs** - weather (no personal
@@ -174,7 +158,7 @@ We share information only in these limited circumstances:
   you before your data is transferred, and you may delete your account
   first if you prefer.
 
-We do **not** sell your personal information. Location and health data are
+We do **not** sell your personal information. Location data is
 **never** shared with third parties for their own purposes.
 
 ## 7. Your rights
@@ -187,7 +171,7 @@ Depending on where you live, you may have the right to:
   yourself in Profile -> Account -> Delete account, or by contacting us.
 - **Export** your data. Profile -> Account -> Export my data downloads every
   memory as JSON.
-- **Withdraw consent** for optional features (push, location, health).
+- **Withdraw consent** for optional features (push, location).
 - **Object** to processing or **restrict** it in certain cases.
 - **Lodge a complaint** with your local data-protection authority.
 
@@ -198,7 +182,7 @@ to be discriminated against for exercising any privacy right.
 
 European Economic Area, UK, and Swiss residents: we process your data on the
 legal bases of **contract performance** (providing the Service you signed up
-for), **your consent** (optional features such as location, voice, health,
+for), **your consent** (optional features such as location, voice,
 and marketing/digest emails), and **legitimate interests** (security and
 abuse prevention). You additionally have the rights to data portability,
 restriction of processing, and to lodge a complaint with your local
